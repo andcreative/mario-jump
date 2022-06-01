@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 20px solid #AAD20C;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+
+}
+
+.mario {
+    width: 120px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 550px;
+    margin-top: 150px;
+    animation: clouds-animation 20s infinite linear;
+}
+
+.clouds2 {
+    position: absolute;
+    width: 550px;
+    margin-top: 350px;
+    animation: clouds-animation2 30s infinite linear;
+}
+
+.montain {
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    animation: montain-animation 18s infinite linear;
+}
+
+.montain2 {
+    position: absolute;
+    bottom: 0px;
+    width: 180px;
+    animation: montain-animation2 35s infinite linear;
+}
+
+.montain3 {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    animation: montain-animation3 45s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -90px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+    
+}
+
+@keyframes clouds-animation2 {
+    from {
+        right: -1500px;
+    }
+
+    to {
+        right: 150%;
+    }
+    
+}
+
+@keyframes montain-animation {
+    from {
+        right: -250px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes montain-animation2 {
+    from {
+        right: -1650px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes montain-animation3 {
+    from {
+        right: -1600px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
