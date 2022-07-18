@@ -1,5 +1,5 @@
 #  Project: JavaScript Game
-### *Mario game created with JavaScript.*
+### *Mario game created with JavaScript. Developed following the video: https://www.youtube.com/watch?v=r9buAwVBDhA&t=12s*
 
 ##  Why?
 
